@@ -1,0 +1,37 @@
+{
+  "name": "newman-reporter-testrail",
+  "version": "1.0.0",
+  "description": "TestRail reporter for Newman",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Billy Lam <3700437+billylam@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sync-request": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "newman",
+    "postman",
+    "testrail"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billylam/newman-reporter-testrail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/billylam/newman-reporter-testrail/issues"
+  },
+  "homepage": "https://github.com/billylam/newman-reporter-testrail#readme"
+}
