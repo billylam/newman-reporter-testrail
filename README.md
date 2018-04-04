@@ -21,15 +21,24 @@ pm.test("C226750 Status code is 200", function () {
 It is recommended you use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
 
 * TESTRAIL_DOMAIN
+
 TestRail domain.  Do not include protocol.
+
 * TESTRAIL_USERNAME
+
 TestRail username / email.
+
 * TESTRAIL_APIKEY
+
 TestRail [API key](http://docs.gurock.com/testrail-api2/accessing#username_and_api_key).
+
 * TESTRAIL_PROJECTID
+
 TestRail project id.
+
 * TESTRAIL_SUITEID (optional)
-TestRail suite id.  Mandatory in multi-suite projects, but optional in single-suite projects. 
+
+TestRail suite id.  Mandatory in multi-suite projects.  Do not use in single-suite projects. 
 
 ### Run newman with the reporter option
 ```
