@@ -11,9 +11,9 @@ npm install newman-reporter-testrail --global
 ## Usage
 
 ### Prefix all test assertions you wish to map with the test number.
-Include the letter C. For example:
+Include the letter C. You may map more than one test case to an assertion.
 ```
-pm.test("C226750 Status code is 200", function () {
+pm.test("C226750 C226746 Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
