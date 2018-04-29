@@ -45,5 +45,5 @@ You may also set some or all of these variables using bash exports.
 Example:
 
 ```
-TESTRAIL_TITLE='Dev API Tests Automation' newman run my-collection.postman_collection.json -e dev-environment.postman_environment.json -d dev-data.csv -r testrail,cli
+TESTRAIL_TITLE="Dev-API Regression" newman run my-collection.postman_collection.json -e dev-environment.postman_environment.json -d dev-data.csv -r testrail,cli
 ```
