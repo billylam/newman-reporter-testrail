@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-testrail",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TestRail reporter for Newman",
   "main": "lib/index.js",
   "scripts": {
@@ -24,7 +24,8 @@
   "keywords": [
     "newman",
     "postman",
-    "testrail"
+    "testrail",
+    "reporter"
   ],
   "repository": {
     "type": "git",
