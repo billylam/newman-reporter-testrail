@@ -1,12 +1,18 @@
 {
-  "name": "newman-reporter-testrail",
-  "version": "1.0.7",
-  "description": "TestRail reporter for Newman",
+  "name": "newman-reporter-testrail-improved",
+  "version": "1.0.8",
+  "description": "Improved TestRail reporter for Newman with filtering",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Billy Lam <3700437+billylam@users.noreply.github.com>",
+  "contributors": [
+    {
+      "name": "Artem Nagornyi",
+      "email": "nagoruni@gmail.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "sync-request": "^6.0.0"
@@ -29,10 +35,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billylam/newman-reporter-testrail.git"
+    "url": "git+https://github.com/nagornyi/newman-reporter-testrail.git"
   },
   "bugs": {
-    "url": "https://github.com/billylam/newman-reporter-testrail/issues"
+    "url": "https://github.com/nagornyi/newman-reporter-testrail/issues"
   },
-  "homepage": "https://github.com/billylam/newman-reporter-testrail#readme"
+  "homepage": "https://github.com/nagornyi/newman-reporter-testrail#readme"
 }
