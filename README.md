@@ -1,6 +1,6 @@
-# newman-reporter-testrail
+# Improved TestRail Reporter for Newman
 
-Improved TestRail reporter for Newman with test cases filtering capability, based on the original https://github.com/billylam/newman-reporter-testrail.
+Improved TestRail reporter for Newman with test case filtering capability (by type and by custom field), based on the original https://github.com/billylam/newman-reporter-testrail.
 
 ## Installation
 
@@ -34,6 +34,10 @@ TestRail suite id.  Mandatory in multi-suite projects.  Do not use in single-sui
 Title of test run to create.
 * TESTRAIL_TYPE (optional)
 Type of test cases to add to the test run.
+* TESTRAIL_CFNAME (optional)
+Custom field name to filter the test cases, for example "Tags".
+* TESTRAIL_CFID (optional, but requires TESTRAIL_CFNAME)
+Custom field value ID, the custom field type must be either [Dropdown or Multi-select](http://docs.gurock.com/testrail-userguide/howto-fields).
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
 
@@ -53,5 +57,7 @@ TESTRAIL_APIKEY="myapikey"
 TESTRAIL_PROJECTID="1"
 TESTRAIL_TITLE="Dev-API Regression"
 TESTRAIL_TYPE="Automated"
+TESTRAIL_CFNAME="Tags"
+TESTRAIL_CFID="3"
 newman run my-collection.postman_collection.json -r testrail,cli --bail
 ```
