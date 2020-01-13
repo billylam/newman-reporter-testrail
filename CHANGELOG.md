@@ -1,3 +1,7 @@
+### 1.0.10 (2020-01-13)
+
+* Fix a bug when testing a top level domain
+
 ### 1.0.10 (2020-01-12)
 
 * Better comments, support for pm.test.skip
