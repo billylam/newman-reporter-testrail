@@ -1,4 +1,8 @@
-### 1.0.10 (2020-01-13)
+### 1.0.12 (2020-01-15)
+
+* Fix comments/logging
+
+### 1.0.11 (2020-01-13)
 
 * Fix a bug when testing a top level domain
 
