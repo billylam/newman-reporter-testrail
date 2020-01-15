@@ -3,33 +3,12 @@
 /* eslint-disable func-names */
 const { assert } = require('chai');
 const TestrailReporter = require('../lib/TestrailReporter');
+const generateJson = require('./lib.js');
 
 describe('Test assertions', function () {
   it('Should handle a test case', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests(null, {
-      assertion: 'C01 Status code is 200',
-      skipped: false,
-      error: null,
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Test case 01',
-        request: {
-          url: {
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson());
     assert.lengthOf(reporter.results, 1);
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 1);
@@ -37,29 +16,7 @@ describe('Test assertions', function () {
 
   it('Should handle multiple mapped test cases', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests(null, {
-      assertion: 'C01 C02 Status code is 200',
-      skipped: false,
-      error: null,
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Test case 01',
-        request: {
-          url: {
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson({ caseNumbers: 'C01 C02' }));
     assert.lengthOf(reporter.results, 2);
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 1);
@@ -69,56 +26,7 @@ describe('Test assertions', function () {
 
   it('Should handle two test cases', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests(null, {
-      assertion: 'C01 Status code is 200',
-      skipped: false,
-      error: null,
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Test case 01',
-        request: {
-          url: {
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
-    reporter.handleTests(null, {
-      assertion: 'C02 Status code is 200',
-      skipped: false,
-      error: null,
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Test case 02',
-        request: {
-          url: {
-            path: [
-              'test',
-              'v1',
-            ],
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson().concat(generateJson({ caseNumbers: 'C02' })));
     assert.lengthOf(reporter.results, 2);
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 1);
@@ -128,53 +36,7 @@ describe('Test assertions', function () {
 
   it('Should handle a failure', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests({
-      name: 'AssertionError',
-      message: 'expected { Object (id, _details, ...) } to have property \'code\'',
-      showDiff: false,
-      actual: {
-        id: 'd9a84783-2643-4573-8680-8be4f91909ce',
-        header: [],
-        cookie: [],
-      },
-      stack: 'AssertionError: some test failed',
-    }, {
-      assertion: 'C01 Status code is 500',
-      skipped: false,
-      error: {
-        name: 'AssertionError',
-        message: 'expected { Object (id, _details, ...) } to have property \'code\'',
-        showDiff: false,
-        actual: {
-          id: 'd9a84783-2643-4573-8680-8be4f91909ce',
-          header: [],
-          cookie: [],
-        },
-        stack: 'AssertionError: some test failed',
-      },
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Failed case',
-        request: {
-          url: {
-            path: [
-              'test',
-              'v1',
-            ],
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson({ error: true }));
     assert.lengthOf(reporter.results, 1);
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 5);
@@ -182,33 +44,7 @@ describe('Test assertions', function () {
 
   it('Should handle a skip', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests(null, {
-      assertion: 'C01 Status code is 500',
-      skipped: true,
-      error: null,
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Failed case',
-        request: {
-          url: {
-            path: [
-              'test',
-              'v1',
-            ],
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson({ skipped: true }));
     assert.lengthOf(reporter.results, 1);
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 4);
@@ -216,100 +52,16 @@ describe('Test assertions', function () {
 
   it('Should work on tld with no path', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests({
-      name: 'AssertionError',
-      message: 'expected { Object (id, _details, ...) } to have property \'code\'',
-      showDiff: false,
-      actual: {
-        id: 'd9a84783-2643-4573-8680-8be4f91909ce',
-        header: [],
-        cookie: [],
-      },
-      stack: 'AssertionError: some test failed',
-    }, {
-      assertion: 'C01 Status code is 500',
-      skipped: false,
-      error: {
-        name: 'AssertionError',
-        message: 'expected { Object (id, _details, ...) } to have property \'code\'',
-        showDiff: false,
-        actual: {
-          id: 'd9a84783-2643-4573-8680-8be4f91909ce',
-          header: [],
-          cookie: [],
-        },
-        stack: 'AssertionError: some test failed',
-      },
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Failed case',
-        request: {
-          url: {
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson({ tldOnly: true }));
     assert.lengthOf(reporter.results, 1);
     assert.equal(reporter.results[0].case_id, '01');
-    assert.equal(reporter.results[0].status_id, 5);
+    assert.equal(reporter.results[0].status_id, 1);
   });
 
 
   it('Should skip an unmarked case', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests({
-      name: 'AssertionError',
-      message: 'expected { Object (id, _details, ...) } to have property \'code\'',
-      showDiff: false,
-      actual: {
-        id: 'd9a84783-2643-4573-8680-8be4f91909ce',
-        header: [],
-        cookie: [],
-      },
-      stack: 'AssertionError: some test failed',
-    }, {
-      assertion: 'Status code is 500',
-      skipped: false,
-      error: {
-        name: 'AssertionError',
-        message: 'expected { Object (id, _details, ...) } to have property \'code\'',
-        showDiff: false,
-        actual: {
-          id: 'd9a84783-2643-4573-8680-8be4f91909ce',
-          header: [],
-          cookie: [],
-        },
-        stack: 'AssertionError: some test failed',
-      },
-      item: {
-        id: '7fea4c93-df98-4aab-a3bd-bec4f0671aec',
-        name: 'Failed case',
-        request: {
-          url: {
-            protocol: 'https',
-            host: [
-              'www',
-              'google',
-              'com',
-            ],
-            query: [],
-            variable: [],
-          },
-          method: 'GET',
-        },
-        response: [],
-      },
-    });
+    reporter.handleTests(generateJson({ caseNumbers: '' }));
     assert.lengthOf(reporter.results, 0);
   });
 });
