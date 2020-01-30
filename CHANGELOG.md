@@ -1,3 +1,6 @@
+### 1.0.13 (2020-01-30)
+* Pass elapsed times, response headers
+
 ### 1.0.12 (2020-01-15)
 
 * Fix comments/logging
