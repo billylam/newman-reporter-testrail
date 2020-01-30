@@ -25,7 +25,8 @@ pm.test("C226750 C226746 Status code is 200", function () {
 | TESTRAIL_APIKEY | TestRail [API key](http://docs.gurock.com/testrail-api2/accessing#username_and_api_key). |
 | TESTRAIL_PROJECTID | TestRail project id. |
 | TESTRAIL_RUNID (optional) | TestRail run id.  Update a specific run instead of creating a new run.  Can use the string "latest" to update latest run. |
-| TESTRAIL_SUITEID (optional) |TestRail suite id.  Mandatory in multi-suite projects.  Do not use in single-suite projects. |
+| TESTRAIL_SUITEID (optional) | TestRail suite id.  Mandatory in multi-suite projects.  Do not use in single-suite projects. |
+| TESTRAIL_VERSION (optional) | Version of API tested. |
 | TESTRAIL_TITLE (optional) | Title of test run to create. |
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.

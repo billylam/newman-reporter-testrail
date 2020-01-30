@@ -1,3 +1,6 @@
+### 1.0.14 (2020-01-30)
+* Allow optional VERSION field
+
 ### 1.0.13 (2020-01-30)
 * Pass elapsed times, response headers
 
