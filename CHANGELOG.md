@@ -1,3 +1,6 @@
+### 1.0.16 (2020-03-18)
+* Fix minimist vulnerability (https://npmjs.com/advisories/1179)
+
 ### 1.0.15 (2020-03-18)
 * Allow fixed custom params on command line
 
