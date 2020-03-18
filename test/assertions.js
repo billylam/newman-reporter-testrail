@@ -64,4 +64,11 @@ describe('Test assertions', function () {
     reporter.handleTests(generateJson({ caseNumbers: '' }));
     assert.lengthOf(reporter.results, 0);
   });
+
+  it('Should parse custom keys', function () {
+    process.env.TESTRAIL_CUSTOM_customenvvar = '123';
+    const reporter = new TestrailReporter({ on: () => null });
+    reporter.handleTests(generateJson());
+    assert.equal(reporter.results[0].customenvvar, '123');
+  });
 });

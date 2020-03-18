@@ -1,3 +1,6 @@
+### 1.0.15 (2020-03-18)
+* Allow fixed custom params on command line
+
 ### 1.0.14 (2020-01-30)
 * Allow optional VERSION field
 
