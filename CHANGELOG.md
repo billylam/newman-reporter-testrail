@@ -1,3 +1,6 @@
+### 1.0.16 (2020-04-11)
+* Fix DNS error issues
+
 ### 1.0.16 (2020-03-18)
 * Fix minimist vulnerability (https://npmjs.com/advisories/1179)
 
