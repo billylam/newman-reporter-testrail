@@ -1,3 +1,6 @@
+### 1.0.18 (2020-04-11)
+* Pass in seconds instead of ms until TestRail properly supports ms
+
 ### 1.0.17 (2020-04-11)
 * Fix DNS error issues
 
