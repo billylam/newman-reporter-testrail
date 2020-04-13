@@ -28,6 +28,7 @@ pm.test("C226750 C226746 Status code is 200", function () {
 | TESTRAIL_SUITEID (optional) | TestRail suite id.  Mandatory in multi-suite projects.  Do not use in single-suite projects. |
 | TESTRAIL_VERSION (optional) | Version of API tested. |
 | TESTRAIL_TITLE (optional) | Title of test run to create. |
+| TESTRAIL_INCLUDEALL (optional) | Whether to include all tests in run, regardless of whether actually run by Newman.  Defaults to true. |
 | TESTRAIL_CUSTOM_* (optional) | A fixed testrail field, where * is the field key |
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
