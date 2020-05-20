@@ -1,3 +1,5 @@
+### 1.0.20 (2020-05-20)
+
 ### 1.0.19 (2020-04-13)
 * Allow TESTRAIL_INCLUDEALL option
 
