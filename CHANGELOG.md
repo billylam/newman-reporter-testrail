@@ -1,3 +1,6 @@
+### 1.0.21 (2020-05-21)
+* Human readable request and response headers in TestRail comment
+
 ### 1.0.20 (2020-05-20)
 * Add error message, if any, to TestRail comment
 
