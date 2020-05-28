@@ -16,7 +16,7 @@ module.exports = function generateJson({
           query: [],
           variable: [],
         },
-        header: [
+        headers: [
           {
             key: 'Content-Type',
             value: 'application/json',
@@ -53,7 +53,7 @@ module.exports = function generateJson({
         query: [],
         variable: [],
       },
-      header: [
+      headers: [
         {
           key: 'Content-Type',
           value: 'application/json',
@@ -65,7 +65,7 @@ module.exports = function generateJson({
       id: '9683db0d-9e48-4503-afe6-c745fa6f068c',
       status: 'Bad Request',
       code: 400,
-      header: [
+      headers: [
         {
           key: 'Connection',
           value: 'close',

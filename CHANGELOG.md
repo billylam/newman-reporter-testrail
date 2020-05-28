@@ -1,3 +1,6 @@
+### 1.0.22 (2020-05-28)
+* Better duplicate test case handling.  Minor refactoring.
+
 ### 1.0.21 (2020-05-21)
 * Human readable request and response headers in TestRail comment
 
