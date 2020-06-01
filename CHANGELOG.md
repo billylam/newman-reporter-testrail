@@ -1,3 +1,6 @@
+### 1.0.23 (2020-06-01)
+* Fix query strings
+
 ### 1.0.22 (2020-05-28)
 * Better duplicate test case handling.  Minor refactoring.
 
