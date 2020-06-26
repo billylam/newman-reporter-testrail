@@ -1,3 +1,6 @@
+### 1.0.24 (2020-06-26)
+* Trim response body logging if response body exceeds 1 mb.
+
 ### 1.0.23 (2020-06-01)
 * Fix query strings
 

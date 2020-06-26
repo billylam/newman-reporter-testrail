@@ -1,5 +1,11 @@
 {
-    "extends": "airbnb-base",
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
         "no-console": 0,
         "no-unused-vars": 0,
@@ -7,6 +13,13 @@
             2,
             {
               "allowForLoopAfterthoughts": true
+            }
+          ],
+          "prettier/prettier": [
+            "error",
+            {
+              "singleQuote": true,
+              "trailingComma": "all"
             }
           ]
     }
