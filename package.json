@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-testrail",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "TestRail reporter for Newman",
   "main": "lib/index.js",
   "scripts": {
@@ -9,16 +9,16 @@
   "author": "Billy Lam <3700437+billylam@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "sync-request": "^6.0.0"
+    "sync-request": "^6.1.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "mocha": "^7.1.1",
+    "mocha": "^7.2.0",
     "prettier": "^2.0.5"
   },
   "directories": {

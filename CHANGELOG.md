@@ -1,3 +1,6 @@
+### 1.0.25 (2020-07-16)
+* Dependency update
+
 ### 1.0.24 (2020-06-26)
 * Trim response body logging if response body exceeds 1 mb.
 
