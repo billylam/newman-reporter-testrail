@@ -1,3 +1,6 @@
+### 1.0.26 (2020-08-06)
+* Pass user agent on testrail requests
+
 ### 1.0.25 (2020-07-16)
 * Dependency update
 
