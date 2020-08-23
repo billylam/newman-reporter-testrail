@@ -1,3 +1,6 @@
+### 1.0.27 (2020-08-22)
+* Log test case and request even if DNS error occurs
+
 ### 1.0.26 (2020-08-06)
 * Pass user agent on testrail requests
 
