@@ -1,3 +1,6 @@
+### 1.0.28 (2020-08-23)
+* Deduplicate logging in cases where same request has duplicate test cases
+
 ### 1.0.27 (2020-08-22)
 * Log test case and request even if DNS error occurs
 
