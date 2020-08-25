@@ -1,3 +1,6 @@
+### 1.0.29 (2020-08-25)
+* Merge PR for milestone id option.
+
 ### 1.0.28 (2020-08-23)
 * Deduplicate logging in cases where same request has duplicate test cases
 
