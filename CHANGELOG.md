@@ -1,3 +1,6 @@
+### 1.0.30 (2021-03-17)
+* Merge PR for date time in default test run titles.
+
 ### 1.0.29 (2020-08-25)
 * Merge PR for milestone id option.
 
