@@ -1,3 +1,5 @@
+### 1.0.31 (2021-03-19)
+* Move dayjs to dependencies.
 ### 1.0.30 (2021-03-17)
 * Merge PR for date time in default test run titles.
 
