@@ -1,3 +1,5 @@
+### 1.0.33 (2021-03-31)
+* Merge PR for security update.
 ### 1.0.32 (2021-03-26)
 * Add a verbose flag for request/response logging.
 ### 1.0.31 (2021-03-19)
