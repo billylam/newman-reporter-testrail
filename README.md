@@ -37,7 +37,7 @@ pm.test("C226750 C226746 Status code is 200", function () {
 | TESTRAIL_TITLE | Title of test run to create. |
 | TESTRAIL_INCLUDEALL | Whether to include all tests in run, regardless of whether actually run by Newman.  Defaults to true. |
 | TESTRAIL_CUSTOM_* | A fixed testrail field, where * is the field key |
-| VERBOSE | Includes request and response body.  Defaults to true. |
+| TESTRAIL_LOGGING | Output logging.  Options are full, headers, none.  Defaults to full. |
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
 

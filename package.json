@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-testrail",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "TestRail reporter for Newman",
   "main": "lib/index.js",
   "scripts": {
@@ -15,9 +15,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
     "mocha": "^7.2.0",
     "prettier": "^2.0.5"

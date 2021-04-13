@@ -1,3 +1,6 @@
+### 1.0.33 (2021-04-12)
+* Change logging optiosn to add a zero logging option.
+
 ### 1.0.33 (2021-03-31)
 * Merge PR for security update.
 ### 1.0.32 (2021-03-26)
