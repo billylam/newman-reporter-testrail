@@ -1,3 +1,5 @@
+### 1.0.37 (2021-07-08)
+* Dependency update
 ### 1.0.36 (2021-05-11)
 * Bugfix - "none" logging option no longer logs error messages or test assertions
 ### 1.0.35 (2021-05-11)
