@@ -1,4 +1,6 @@
 ### 1.0.37 (2021-07-08)
+* Merge PR for custom pass, fail, skip statuses
+### 1.0.37 (2021-07-08)
 * Dependency update
 ### 1.0.36 (2021-05-11)
 * Bugfix - "none" logging option no longer logs error messages or test assertions
