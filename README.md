@@ -38,6 +38,10 @@ pm.test("C226750 C226746 Status code is 200", function () {
 | TESTRAIL_INCLUDEALL | Whether to include all tests in run, regardless of whether actually run by Newman.  Defaults to true. |
 | TESTRAIL_CUSTOM_* | A fixed testrail field, where * is the field key |
 | TESTRAIL_LOGGING | Output logging.  Options are full, headers, none.  Defaults to full.  Use the none or headers option if you are getting a "Request Entity Too Large" error. |
+| TESTRAIL_PASSED_ID | The ID of a custom status to use for Passed.  Defaults to 1 which is the value for the Passed status. |
+| TESTRAIL_FAILED_ID | The ID of a custom status to use for Failed.  Defaults to 5 which is the value for the Failed status. |
+| TESTRAIL_SKIPPED_ID | The ID of a custom status to use for Skipped.  Defaults to 4 which is the value for the Skipped status. |
+
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
 
