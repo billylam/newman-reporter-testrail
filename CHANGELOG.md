@@ -1,4 +1,6 @@
-### 1.0.37 (2021-07-08)
+### 1.0.39 (2021-07-24)
+* Log non-raw request POST bodies.  Also remove VERBOSE flag.
+### 1.0.38 (2021-07-08)
 * Merge PR for custom pass, fail, skip statuses
 ### 1.0.37 (2021-07-08)
 * Dependency update
