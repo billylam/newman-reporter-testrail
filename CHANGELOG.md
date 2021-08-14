@@ -1,3 +1,5 @@
+### 1.0.40 (2021-08-13)
+* Initial support for test steps.
 ### 1.0.39 (2021-07-24)
 * Log non-raw request POST bodies.  Also remove VERBOSE flag.
 ### 1.0.38 (2021-07-08)
