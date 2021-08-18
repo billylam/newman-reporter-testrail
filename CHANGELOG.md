@@ -1,3 +1,5 @@
+### 1.0.41 (2021-08-18)
+* Merge PR for custom step field names.
 ### 1.0.40 (2021-08-13)
 * Initial support for test steps.
 ### 1.0.39 (2021-07-24)
