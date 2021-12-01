@@ -43,7 +43,7 @@ pm.test("C226750 C226746 Status code is 200", function () {
 | TESTRAIL_SKIPPED_ID | The ID of a custom status to use for Skipped.  Defaults to 4 which is the value for the Skipped status. |
 | TESTRAIL_STEPS | Project uses test steps.  Test cases that share the same case id are assumed to be steps for the same test case.  Defaults to false. |
 | TESTRAIL_STEPRESULT_KEY | If TESTRAIL_STEPS is set to true and your TestRail configuration changed the Step Results field to another value then you can set this env variable to the correct name.  By default this is set to "step_results". |
-
+| TESTRAIL_TITLE_MATCHING | Attempt to fetch test cases from server and match via case name instead of id |
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
 

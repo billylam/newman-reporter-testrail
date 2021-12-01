@@ -1,3 +1,5 @@
+### 1.0.42 (2021-11-30)
+* Initial support for case name matching instead as alternative to ids.
 ### 1.0.41 (2021-08-18)
 * Merge PR for custom step field names.
 ### 1.0.40 (2021-08-13)
