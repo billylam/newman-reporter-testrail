@@ -1,3 +1,5 @@
+### 1.0.44 (2021-01-06)
+* Fix bug with "latest" runId option.
 ### 1.0.43 (2021-12-26)
 * Merge PR to fix an issue that caused excess api calls in large suites.  Also update some dev dependencies for security update.
 ### 1.0.42 (2021-11-30)
