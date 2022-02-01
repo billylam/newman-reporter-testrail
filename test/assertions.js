@@ -3,8 +3,9 @@
 /* eslint-disable func-names */
 const { assert } = require('chai');
 const TestrailReporter = require('../lib/TestrailReporter');
-const generateJson = require('./lib.js');
+const generateJson = require('./lib');
 
+// Note these tests need to be refactored after main lib was refactored
 describe('Test assertions', function () {
   it('Should handle a test case', function () {
     const reporter = new TestrailReporter({ on: () => null });
@@ -26,7 +27,9 @@ describe('Test assertions', function () {
 
   it('Should handle two test cases', function () {
     const reporter = new TestrailReporter({ on: () => null });
-    reporter.handleTests(generateJson().concat(generateJson({ caseNumbers: 'C02' })));
+    reporter.handleTests(
+      generateJson().concat(generateJson({ caseNumbers: 'C02' })),
+    );
     assert.lengthOf(reporter.results, 2);
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 1);
@@ -57,7 +60,6 @@ describe('Test assertions', function () {
     assert.equal(reporter.results[0].case_id, '01');
     assert.equal(reporter.results[0].status_id, 1);
   });
-
 
   it('Should skip an unmarked case', function () {
     const reporter = new TestrailReporter({ on: () => null });
