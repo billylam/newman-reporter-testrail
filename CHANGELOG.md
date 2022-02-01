@@ -1,3 +1,5 @@
+### 1.0.45 (2021-02-01)
+* Always add test case name in comments.
 ### 1.0.44 (2021-01-06)
 * Fix bug with "latest" runId option.
 ### 1.0.43 (2021-12-26)
