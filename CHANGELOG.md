@@ -1,3 +1,5 @@
+### 1.0.46 (2021-02-23)
+* Merge PRs for beta header, matching via request name.
 ### 1.0.45 (2021-02-01)
 * Always add test case name in comments.
 ### 1.0.44 (2021-01-06)
