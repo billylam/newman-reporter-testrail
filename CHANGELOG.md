@@ -1,3 +1,5 @@
+### 1.0.47 (2021-03-18)
+* Merge PR for close run option.
 ### 1.0.46 (2021-02-23)
 * Merge PRs for beta header, matching via request name.
 ### 1.0.45 (2021-02-01)
