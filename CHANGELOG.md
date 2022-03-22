@@ -1,3 +1,5 @@
+### 1.0.47 (2021-03-22)
+* Fix bug (closing runs due to falsiness check).
 ### 1.0.47 (2021-03-18)
 * Merge PR for close run option.
 ### 1.0.46 (2021-02-23)
