@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-testrail",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "description": "TestRail reporter for Newman",
   "main": "lib/index.js",
   "scripts": {
