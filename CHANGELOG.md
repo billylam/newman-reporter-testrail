@@ -1,6 +1,7 @@
-### 1.0.49 (2021-08-15)
+### 1.0.51 (2021-09-25)
+* Merge PR to support refs
+### 1.0.50 (2021-08-15)
 * Merge PR to support plans
-
 ### 1.0.49 (2021-04-29)
 * Merge PR to propagate test ids from parent name to child assertions when title matching is true.
 ### 1.0.48 (2021-03-22)
