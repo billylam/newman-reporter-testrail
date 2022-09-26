@@ -35,7 +35,8 @@ pm.test("C226750 C226746 Status code is 200", function () {
 | TESTRAIL_MILESTONEID    | Milestone to link test to.
 | TESTRAIL_PLANID           | Test Plan Id to add run to. NOTE: Requires TESTRAIL_SUITEID to be set even in single-suite projects.                                                                                                                                                                                          |
 | TESTRAIL_VERSION        | Version of API tested.                                                                                                                                                                                              |
-| TESTRAIL_TITLE          | Title of test run to create.                                                                                                                                                                                        |
+| TESTRAIL_TITLE          | Title of test run to create.             
+| TESTRAIL_REFS          | Ref of test run to create.                                                                                                                                                                                        |
 | TESTRAIL_INCLUDEALL     | Whether to include all tests in run, regardless of whether actually run by Newman.  Defaults to true.                                                                                                               |
 | TESTRAIL_CLOSE_RUN      | Whether to close the TestRail run after completion of the Newman run.  Defaults to false.                                                                                                               |
 | TESTRAIL_CUSTOM_*       | A fixed testrail field, where * is the field key                                                                                                                                                                    |
